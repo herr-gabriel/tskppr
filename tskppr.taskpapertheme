@@ -55,6 +55,7 @@
 	<entryRule matchesQuery="@done" contentCharacterStyleID="done" />
 	
 	<!-- @important style. This section defines the styles that are applied to lines tagged with @important -->
-	<characterStyle id="important" red="0.84" green="0.27" blue="0.25" alpha="1.0" />
-	<entryRule matchesQuery="@important" contentCharacterStyleID="important" />
+	<color id="important" red="0.84" green="0.27" blue="0.25" alpha="1.0" />
+	<characterStyle id="important" foregroundColorID="important" fontID="base" />
+	<entryRule matchesQuery="@important and not @done" lineCharacterStyleID="important" />
 </theme>
