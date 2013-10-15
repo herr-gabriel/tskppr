@@ -51,7 +51,8 @@
 	<entryRule matchesQuery="type = &quot;project&quot; and level = 0" paragraphStyleID="groupHeader" lineCharacterStyleID="groupHeader" />
 
 	<!-- @done style. This section defines the styles that are applied to lines tagged with @done. -->
-	<characterStyle id="done" strikethroughStyle="NSUnderlineStyleSingle" />
+	<color id="done" red="0.79" green="0.79" blue="0.79" alpha="1.0" />
+	<characterStyle id="done" foregroundColorID="done" tagColorID="done" strikethroughStyle="NSUnderlineStyleSingle" />
 	<entryRule matchesQuery="@done" contentCharacterStyleID="done" />
 	
 	<!-- @important style. This section defines the styles that are applied to lines tagged with @important -->
